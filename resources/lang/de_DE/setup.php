@@ -12,7 +12,7 @@ return [
     'intro.step3' => 'Erstellen Sie Ihr Benutzerkonto.',
 
     'check_requirements' => 'Anforderungen prüfen',
-    'requirements.php_version' => 'PHP Version >= 7.2.0',
+    'requirements.php_version' => 'PHP Version >= 7.3.0',
     'requirements.extension_bcmath' => 'PHP Extension: BCMath',
     'requirements.extension_ctype' => 'PHP Extension: Ctype',
     'requirements.extension_json' => 'PHP Extension: JSON',
@@ -22,6 +22,7 @@ return [
     'requirements.extension_tokenizer' => 'PHP Extension: Tokenizer',
     'requirements.extension_xml' => 'PHP Extension: XML',
     'requirements.env_writable' => '.env Datei ist vorhanden und beschreibbar',
+    'requirements.storage_writable' => '/storage und /storage/logs Verzeichnisse sind beschreibbar',
 
     'database_configuration' => 'Datenbankkonfiguration',
     'database_configure' => 'Datenbank konfigurieren',

@@ -39,7 +39,7 @@ RUN npm run production
 
 # ================================
 # Prepare the final image including nginx
-FROM webdevops/php-nginx:7.4
+FROM webdevops/php-nginx:8.0-alpine
 WORKDIR /app
 
 # Copy the app into the container
@@ -67,6 +67,9 @@ COPY ./resources/docker/php/php.ini /opt/docker/etc/php/php.ini
 # Copy files from the composer build
 COPY --from=builder /app/vendor /app/vendor
 COPY --from=builder /app/bootstrap/cache /app/bootstrap/cache
+
+# Install MySQL Dump for automated backups
+RUN apk add --no-cache mariadb-client
 
 # Publish package resources
 RUN php artisan vendor:publish --provider="Spatie\Backup\BackupServiceProvider"

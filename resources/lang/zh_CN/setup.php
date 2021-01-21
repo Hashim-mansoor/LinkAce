@@ -12,7 +12,7 @@ return [
     'intro.step3' => '创建您的帐户。',
 
     'check_requirements' => '检查要求',
-    'requirements.php_version' => 'PHP version >= 7.2.0',
+    'requirements.php_version' => 'PHP version >= 7.3.0',
     'requirements.extension_bcmath' => 'PHP Extension: BCMath',
     'requirements.extension_ctype' => 'PHP Extension: Ctype',
     'requirements.extension_json' => 'PHP Extension: JSON',
@@ -22,6 +22,7 @@ return [
     'requirements.extension_tokenizer' => 'PHP Extension: Tokenizer',
     'requirements.extension_xml' => 'PHP Extension: XML',
     'requirements.env_writable' => '.env 文件已存在并可写',
+    'requirements.storage_writable' => '',
 
     'database_configuration' => '数据库配置',
     'database_configure' => '配置数据库',
